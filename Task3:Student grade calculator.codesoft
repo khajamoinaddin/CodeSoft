@@ -1,0 +1,75 @@
+package gc;
+import java.util.Scanner;
+public class GradeCalator {
+private static String calculateGrade(double averagePercentage)
+{
+	if(averagePercentage>=99)
+	{
+		return "A+";
+	}
+	if(averagePercentage>=90)
+	{
+		 return "A";
+	}
+	else if(averagePercentage>=80)
+	{
+		 return "B";
+	}
+	else if(averagePercentage>=70)
+	{
+		 return "C";
+	}
+	else if(averagePercentage>=60)
+	{
+		 return "D";
+	}
+	else
+	{
+		 return "F";
+	}
+}
+	public static void main(String[] args) {
+		 Scanner kh=new Scanner(System.in);
+		 System.out.println("Enter the marks for subject 1::");
+		 double subject1=kh.nextDouble();
+		 System.out.println("Enter the marks for subject 2::");
+		 double subject2=kh.nextDouble();
+		 System.out.println("Enter the marks for subject 3::");
+		 double subject3=kh.nextDouble();
+		 System.out.println("Enter the marks for subject 4::");
+		 double subject4=kh.nextDouble();
+		 System.out.println("Enter the marks for subject 5::");
+		 double subject5=kh.nextDouble();
+		 double totalMarks=subject1+subject2+subject3+subject4+subject5;
+		 double average=totalMarks/5;
+		 double averagePercentage=(totalMarks/(5*100))*100;
+		 String grade=calculateGrade(averagePercentage);
+		 System.out.println("Total marks:"+totalMarks);
+		 System.out.println("Average marks:"+average);
+		 System.out.println("AveragePercentagge"+averagePercentage+"%");
+		 System.out.println("GRADE:::"+grade);
+		if(grade=="A+")
+		{
+		System.out.println("Remark::-Fantastic");	
+		}
+		else if(grade=="A")
+		{
+			System.out.println("Remark::-Very Good");
+		}
+		else if(grade=="B")
+		{
+			System.out.println("Remark::-Good");
+		}
+		else if(grade=="C")
+		{
+			System.out.println("Remark::-Not Bad");
+		}
+		else if(grade=="D")
+		{
+			System.out.println("Remark::-Bad");
+		}
+		else if(grade=="F"){
+			System.out.println("Remark::-Fail");
+		}
+	}
+}
