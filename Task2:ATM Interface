@@ -5,7 +5,7 @@ package gc;
 public class ATMInterfac{
     public static void main(String[] args){
         int pin;
-        int password=50489;
+        int password=5048;
         int count=0;
         double deposite=0.0;
         double balance=500.0;
