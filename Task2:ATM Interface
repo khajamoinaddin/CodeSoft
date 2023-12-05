@@ -114,7 +114,7 @@ case 2:
                       break;
             } 
               }while(istrue != false); 
-             System.out.println("Welcome to Joe Franklin ATM services"); 
+             System.out.println("Welcome to CodeSoft ATM services"); 
              System.out.println("1. Deposite");
             System.out.println("2. Balance");
             System.out.println("3. Withdraw");
