@@ -41,7 +41,7 @@ switch(entry)
 
 System.out.println("Deposite an amount in Rupees");
 deposite=sc.nextInt();
-balance = balance + deposite;
+balance = balance - deposite;
 System.out.println("Your new balance is " +balance);
 System.out.println("your deposite is done successfully"+" thank you");
 System.out.println(" ");
